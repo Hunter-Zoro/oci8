@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: oci8
+#  datasource:
+#    url: jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))(CONNECT_DATA=(SID=ORCL)))
+#    username: SHLIB
+#    password: ksVfptnl3UoV
+#    driver-class-name: oracle.jdbc.OracleDriver
+#    type: com.zaxxer.hikari.HikariDataSource
+#    hikari:
+#      maximum-pool-size: 10
+
+  profiles:
+    active: dev
+
+server:
+  port: 8282
+
+logging:
+  level:
+    org.springframework: INFO
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
